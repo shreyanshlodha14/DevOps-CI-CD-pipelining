@@ -1,4 +1,4 @@
-# DevOpsify the go web application
+# DevOpsify the sample go web application
 
 The main goal of this project is to implement DevOps practices in the Go web application. The project is a simple website written in Golang. It uses the `net/http` package to serve HTTP requests.
 
@@ -9,10 +9,6 @@ DevOps practices include the following:
 - Continuous Integration (CI)
 - Continuous Deployment (CD)
 
-## Summary Diagram
-![image](https://github.com/user-attachments/assets/45f4ef12-c5b5-4247-9d43-356b5dfb671b)
-
-
 ## Creating Dockerfile (Multi-stage build)
 
 The Dockerfile is used to build a Docker image. The Docker image contains the Go web application and its dependencies. The Docker image is then used to create a Docker container.
@@ -22,26 +18,6 @@ We will use a Multi-stage build to create the Docker image. The Multi-stage buil
 ## Containerization
 
 Containerization is the process of packaging an application and its dependencies into a container. The container is then run on a container platform such as Docker. Containerization allows you to run the application in a consistent environment, regardless of the underlying infrastructure.
-
-We will use Docker to containerize the Go web application. Docker is a container platform that allows you to build, ship, and run containers.
-
-Commands to build the Docker container:
-
-```bash
-docker build -t <your-docker-username>/go-web-app .
-```
-
-Command to run the Docker container:
-
-```bash
-docker run -p 8080:8080 <your-docker-username>/go-web-app
-```
-
-Command to push the Docker container to Docker Hub:
-
-```bash
-docker push <your-docker-username>/go-web-app
-```
 
 ## Continuous Integration (CI)
 
@@ -64,7 +40,7 @@ We will use Argo CD to implement CD for the Go web application. Argo CD is a dec
 
 The Argo CD application will deploy the Go web application to a Kubernetes cluster. The application will be automatically synced with the Git repository, ensuring that the application is always up to date.
 
-## Conclusion
+
 
 
 
